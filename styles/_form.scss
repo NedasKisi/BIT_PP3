@@ -1,0 +1,36 @@
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  #subject {
+    height: 11vh;
+  }
+}
+input[type="text"],
+select,
+textarea {
+  display: grid;
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  margin-top: 3px;
+  margin-bottom: 8px;
+  resize: vertical;
+}
+input[type="submit"] {
+  background-color: $orange-brown;
+  color: rgb(255, 255, 255);
+  padding: 15px 30px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin: auto;
+  &:hover {
+    background-color: #000000;
+  }
+
+}
+

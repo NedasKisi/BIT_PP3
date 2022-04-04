@@ -1,0 +1,48 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.gallery__item {
+  width: 25%;
+  padding: 0.5rem;
+  & a, iframe{
+    display: flex;
+    height: 15vw;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  & img, iframe {
+    display: block;
+    min-height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    transition: all ease 300ms;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+}
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .gallery__item {
+    width: 50%;
+    & a {
+      height: 180px;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .gallery__item {
+    width: 100%;
+  }
+}
+
