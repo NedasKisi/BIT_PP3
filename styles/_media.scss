@@ -1,0 +1,55 @@
+/* ..............MEDIA/RESPONSIVE.............. */
+@media all and (max-width: 480px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+    a {
+      text-align: center;
+      padding: 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    li:last-of-type a {
+      border-bottom: none;
+    }
+  }
+  .main {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+  }
+  .main__wrapper {
+    background: transparent;
+  }
+  .contact__details,
+  .social__details {
+    flex-direction: column;
+  }
+  footer {
+    flex-direction: column;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    ul{
+      align-self: flex-start;
+    }
+  }
+}
+ 
+@media all and (max-width: 1200px) {
+  .main__wrapper {
+    flex-wrap: wrap;
+  }
+  .contact__details,
+  .social__details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+  }
+}
+ 

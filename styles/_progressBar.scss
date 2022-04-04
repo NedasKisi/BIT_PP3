@@ -1,0 +1,32 @@
+.skills {
+  width: fit-content;
+  margin: auto;
+}
+.progress-bar {
+  margin-bottom: 1rem;
+  
+  &__wrapper {
+    background: rgb(211, 211, 211);
+    width: 300px;
+    height: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+  }
+  &__fill {
+    background: rgb(0, 128, 128);
+    height: 100%;
+    border-radius: 10px;
+  }
+  &:first-child .progress-bar__fill {
+    width: 65%;
+  }
+  &:nth-child(2) .progress-bar__fill {
+    width: 45%;
+  }
+  &:nth-child(3) .progress-bar__fill {
+    width: 15%;
+  }
+  &:last-child .progress-bar__fill{
+    width: 10%;
+  }
+}

@@ -22,6 +22,7 @@
     transition: all ease 300ms;
     &:hover {
       opacity: 1;
+      transform: scale(1.15); //zoom in picture
     }
   }
 
