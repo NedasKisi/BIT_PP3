@@ -15,7 +15,6 @@ body {
   color: $light-grey;
 }
 
-/* ..............CONTAINER............ */
 
 .container {
   display: flex;
@@ -37,7 +36,6 @@ aside,
   border: 3px solid rgba(255, 255, 255, 0.31);
 }
 
-/* ..............WRAPPER.............. */
 .wrapper {
   display: flex;
   flex-flow: row wrap;
@@ -45,18 +43,18 @@ aside,
   margin: 2rem 0;
   width: 100%;
 
-  .main { // .wrapper .main {}
+  .main {
     align-self: stretch;
     
-    &__wrapper { // .main__wrapper {}
+    &__wrapper {
       display: flex;
       height: 100%;
     }
   }
-  .hero { // .wrapper .hero {}
+  .hero {
     align-self: center;
   }
-  > * { // .wrapper > *
+  > * {
     padding: 10px;
     flex: 1 100%;
   }
@@ -65,12 +63,14 @@ aside,
 .welcomeHead {
   justify-content: center;
 }
-
-/* ..............PORTRAIT.............. */
 .portrait {
   height: 300px;
   background: #ffffff;
   border-radius: 150px 75px 175px 15px;
+  &:hover {
+    border-radius: 20px;
+    transition: ease-in-out 1s;
+  }
 
 }
 .imageHolder {
@@ -99,8 +99,7 @@ h1 {
   padding-top: 2rem;
   font-size: 35px;
 }
-// ********91 iki95***********
-/* ..............ASIDE................ */
+
 aside,
 .main__content {
   margin: 1rem;
@@ -117,7 +116,31 @@ aside {
   width: 100%;
 }
 
-/* ..............FOOTER............... */
+.main {
+  text-align: center;
+  margin: 1rem;
+  & p {
+    font-size: 19px;
+    margin: 1.5rem;
+  }
+}
+.main__content {
+  width: 100%;
+}
+h2,
+.h3_title {
+  color: #924836;
+  margin-top: 1rem;
+}
+
+.ulexp_list li,
+.uledu_list li,
+.skills {
+  padding: 1rem;
+  text-align: left;
+  margin: 2rem;
+}
+
 footer {
   bottom: 0;
   padding: 1rem;
@@ -159,31 +182,4 @@ footer {
 
 .footer ul li a:hover {
   color: #924836;
-}
-
-
-/* ..............MAIN................. */
-.main {
-  text-align: center;
-  margin: 1rem;
-  & p {
-    font-size: 19px;
-    margin: 1.5rem;
-  }
-}
-.main__content {
-  width: 100%;
-}
-h2,
-.h3_title {
-  color: #924836;
-  margin-top: 1rem;
-}
-
-.ulexp_list li,
-.uledu_list li,
-.skills {
-  padding: 1rem;
-  text-align: left;
-  margin: 2rem;
 }
