@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url(/images/bodyback.jpg) center center no-repeat;
+  height: 100%;
+  background-size: auto;
+  min-height: 100vh;
+  width: 100%;
+  margin: auto;
+  color: $light-grey;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  border-radius: 50px 50px 0px 0px;
+  min-height: 100vh;
+  margin: 2rem 0 2rem 0;
+}
+.container,
+footer,
+.navigation,
+aside,
+.main__content {
+  background: rgba(255, 255, 255, 0.65);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.9px);
+  -webkit-backdrop-filter: blur(3.9px);
+  border: 3px solid rgba(255, 255, 255, 0.31);
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  margin: 2rem 0;
+  width: 100%;
+
+  .main {
+    align-self: stretch;
+    
+    &__wrapper {
+      display: flex;
+      height: 100%;
+    }
+  }
+  .hero {
+    align-self: center;
+  }
+  > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+}
+
+.welcomeHead {
+  justify-content: center;
+}
+
+.portrait {
+  height: 300px;
+  background: #ffffff;
+  border-radius: 150px 75px 175px 15px;
+}
+.imageHolder {
+  display: inline-block;
+}
+
+.contact__details-item,
+.social__details-item {
+  display: flex;
+  margin-top: 28px;
+  & .icon {
+    width: 28px;
+    margin-right: 0.3rem;
+    color: $orange-brown;
+  }
+  & a {
+    text-decoration: none;
+    color: $light-grey;
+    &:visited {
+      color: $light-grey;
+    }
+  }
+}
+h1 {
+  color: $orange-brown;
+  padding-top: 2rem;
+  font-size: 35px;
+}
+aside,
+.main__content {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 15px;
+}
+.container {
+  background: rgba(255, 255, 255, 0.65);
+}
+aside {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.main {
+  text-align: center;
+  margin: 1rem;
+  & p {
+    font-size: 19px;
+    margin: 1.5rem;
+  }
+}
+.main__content {
+  width: 100%;
+}
+h2,
+.h3_title {
+  color: #924836;
+  margin-top: 1rem;
+}
+
+.ulexp_list li,
+.uledu_list li,
+.skills {
+  padding: 1rem;
+  text-align: left;
+  margin: 2rem;
+}
+
+
+$light-grey:#4d494d;
+$orange-brown: #924836;
+
+
+@mixin flexRowWrap($justify) {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: $justify;
+}
