@@ -57,7 +57,7 @@ sass source/stylesheets/index.scss build/stylesheets/index.css
 - Created new branch "updates".
 - Added 3rd column to footer and zoom in on hero image on hover.
 
-- Original website uploaded to github manually, can be accessed:[Sprint2/PP2](https://nedaskisi.github.io/BIT_PP2/)
+- Original website uploaded to github manually, can be accessed:[Sprint3/PP3](https://nedaskisi.github.io/BIT_PP3/)
 
 # Goal
 
